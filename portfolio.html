@@ -1,87 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Prakhar Bajpai - Portfolio</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prakhar Bajpai | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f5f7fa;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(135deg, #4b6cb7, #182848);
+      color: white;
+      padding: 4rem 1rem;
+      text-align: center;
+    }
+    header img {
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #fff;
+      margin-bottom: 1rem;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+    section {
+      max-width: 1000px;
+      margin: 3rem auto;
+      padding: 2rem;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    section h2 {
+      font-size: 1.8rem;
+      color: #4b6cb7;
+      border-bottom: 2px solid #4b6cb7;
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+    }
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .tags span {
+      background-color: #4b6cb7;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background-color: #182848;
+      color: white;
+      margin-top: 3rem;
+    }
+    a {
+      color: #4b6cb7;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
-<body class="bg-gradient-to-br from-blue-100 to-indigo-200 min-h-screen font-sans text-gray-800">
-
-  <header class="text-center py-12 bg-gradient-to-r from-indigo-600 to-blue-600 text-white">
-    <img src="assets/Screenshot_2025-02-04_064533.png" alt="Prakhar Bajpai" class="w-32 h-32 mx-auto rounded-full border-4 border-white shadow-md" />
-    <h1 class="text-4xl font-bold mt-4">Prakhar Bajpai</h1>
-    <p class="text-lg mt-2">Web & App Developer | MCA Student</p>
+<body>
+  <header>
+    <img src="Screenshot%202025-02-04%20064533.png" alt="Prakhar Bajpai">
+    <h1>Prakhar Bajpai</h1>
+    <p>Web & App Developer | MCA Student</p>
   </header>
 
-  <main class="max-w-4xl mx-auto px-4 py-10 space-y-12">
-    <section>
-      <h2 class="text-2xl font-semibold border-b-2 border-indigo-500 mb-4">About Me</h2>
-      <p class="mb-4">Hello! I'm a passionate Web & App Developer eager to build innovative, user-friendly digital experiences. As a fresher, I thrive on learning new technologies and solving real-world problems through code. My expertise includes HTML, CSS, JavaScript, React, and Python, and I'm currently expanding my knowledge in backend development and mobile app development.</p>
-      <p>I enjoy developing responsive websites, interactive applications, and scalable solutions that enhance user experiences. Whether it's crafting a clean UI, optimizing performance, or working on exciting new frameworks, I’m always up for the challenge.</p>
-    </section>
+  <section>
+    <h2>About Me</h2>
+    <p>Hello! I'm a passionate Web & App Developer eager to build innovative, user-friendly digital experiences. As a fresher, I thrive on learning new technologies and solving real-world problems through code. My expertise includes HTML, CSS, JavaScript, React, and Python, and I'm currently expanding my knowledge in backend development and mobile app development.</p>
+    <p>I enjoy developing responsive websites, interactive applications, and scalable solutions that enhance user experiences. Whether it's crafting a clean UI, optimizing performance, or working on exciting new frameworks, I’m always up for the challenge.</p>
+    <h3>My Journey</h3>
+    <p>I started my journey in tech with a deep curiosity for how websites and apps function. Over time, I've built personal projects, contributed to open-source communities, and continuously improved my coding skills through challenges on LeetCode, CodeChef, and GitHub. My goal is to build impactful applications that solve real-world problems and make a difference.</p>
+  </section>
 
-    <section>
-      <h2 class="text-2xl font-semibold border-b-2 border-indigo-500 mb-4">My Journey</h2>
-      <p>I started my journey in tech with a deep curiosity for how websites and apps function. Over time, I've built personal projects, contributed to open-source communities, and continuously improved my coding skills through challenges on LeetCode, CodeChef, and GitHub. My goal is to build impactful applications that solve real-world problems and make a difference.</p>
-    </section>
+  <section>
+    <h2>Skills & Technologies</h2>
+    <div class="tags">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+      <span>React</span>
+      <span>Python</span>
+      <span>Node.js</span>
+      <span>Django</span>
+      <span>Flask</span>
+      <span>MySQL</span>
+      <span>MongoDB</span>
+      <span>Git</span>
+      <span>GitHub</span>
+      <span>UI/UX</span>
+      <span>Responsive Design</span>
+      <span>Firebase</span>
+      <span>Vercel</span>
+      <span>Netlify</span>
+    </div>
+  </section>
 
-    <section>
-      <h2 class="text-2xl font-semibold border-b-2 border-indigo-500 mb-4">Skills & Technologies</h2>
-      <div class="flex flex-wrap gap-3">
-        <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-sm font-medium shadow">HTML</span>
-        <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-sm font-medium shadow">CSS</span>
-        <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-sm font-medium shadow">JavaScript</span>
-        <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-sm font-medium shadow">React</span>
-        <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-sm font-medium shadow">Python</span>
-        <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-sm font-medium shadow">Node.js</span>
-        <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-sm font-medium shadow">Django</span>
-        <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-sm font-medium shadow">Flask</span>
-        <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-sm font-medium shadow">MySQL</span>
-        <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-sm font-medium shadow">MongoDB</span>
-        <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-sm font-medium shadow">Git</span>
-        <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-sm font-medium shadow">GitHub</span>
-        <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-sm font-medium shadow">UI/UX</span>
-        <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-sm font-medium shadow">Responsive Design</span>
-        <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-sm font-medium shadow">Firebase</span>
-        <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-sm font-medium shadow">Vercel</span>
-        <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-sm font-medium shadow">Netlify</span>
-      </div>
-    </section>
+  <section>
+    <h2>Certificates</h2>
+    <div class="tags">
+      <span>Python</span>
+      <span>DBMS</span>
+    </div>
+  </section>
 
-    <section>
-      <h2 class="text-2xl font-semibold border-b-2 border-indigo-500 mb-4">Certificates</h2>
-      <div class="flex gap-4">
-        <span class="bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-medium shadow">Python</span>
-        <span class="bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-medium shadow">DBMS</span>
-      </div>
-    </section>
+  <section>
+    <h2>Hobbies</h2>
+    <div class="tags">
+      <span>Playing Cricket</span>
+      <span>Watching Movies</span>
+    </div>
+  </section>
 
-    <section>
-      <h2 class="text-2xl font-semibold border-b-2 border-indigo-500 mb-4">Hobbies</h2>
-      <div class="flex gap-4">
-        <span class="bg-yellow-100 text-yellow-800 px-4 py-2 rounded-full text-sm font-medium shadow">Playing Cricket</span>
-        <span class="bg-yellow-100 text-yellow-800 px-4 py-2 rounded-full text-sm font-medium shadow">Watching Movies</span>
-      </div>
-    </section>
+  <section>
+    <h2>Education</h2>
+    <ul>
+      <li><strong>MCA</strong> - Master of Computer Application (Ongoing)</li>
+      <li><strong>B.Sc</strong> - Bachelor of Science (Completed)</li>
+    </ul>
+  </section>
 
-    <section>
-      <h2 class="text-2xl font-semibold border-b-2 border-indigo-500 mb-4">Education</h2>
-      <ul class="list-disc pl-6">
-        <li class="mb-2"><strong>MCA</strong> - Master of Computer Application (Ongoing)</li>
-        <li><strong>B.Sc</strong> - Bachelor of Science (Completed)</li>
-      </ul>
-    </section>
+  <section>
+    <h2>Let's Connect</h2>
+    <p>I'm always open to collaboration, learning, and working on meaningful tech projects. Let's connect!</p>
+    <p><strong>Email:</strong> <a href="mailto:prakharbajpai727504@gmail.com">prakharbajpai727504@gmail.com</a></p>
+    <p><strong>Phone:</strong> +91 7275043355</p>
+    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/prakhar-bajpai-405757339">linkedin.com/in/prakhar-bajpai</a></p>
+  </section>
 
-    <section>
-      <h2 class="text-2xl font-semibold border-b-2 border-indigo-500 mb-4">Let's Connect</h2>
-      <p class="mb-2">I'm always open to collaboration, learning, and working on meaningful tech projects. Let's connect!</p>
-      <p><strong>Email:</strong> <a href="mailto:prakharbajpai727504@gmail.com" class="text-blue-600 hover:underline">prakharbajpai727504@gmail.com</a></p>
-      <p><strong>Phone:</strong> +91 7275043355</p>
-      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/prakhar-bajpai-405757339" class="text-blue-600 hover:underline">linkedin.com/in/prakhar-bajpai</a></p>
-    </section>
-  </main>
-
-  <footer class="text-center py-6 bg-indigo-700 text-white">
-    <p>&copy; 2025 Prakhar Bajpai | Designed with ❤️ using HTML & Tailwind</p>
+  <footer>
+    <p>&copy; 2025 Prakhar Bajpai | Designed with ❤️</p>
   </footer>
+</body>
+</html>
