@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio - Austin Jackson</title>
+  <style>
+    /* Reset and base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Arial', sans-serif;
+      color: #333;
+      background-color: #fff;
+    }
+
+    /* Navigation */
+    nav {
+      background: rgba(0, 0, 0, 0.7);
+      position: fixed;
+      width: 100%;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+    }
+    nav .logo {
+      font-weight: bold;
+      color: #f7b733;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+    nav ul li {
+      color: white;
+      font-weight: 600;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+    nav ul li a:hover,
+    nav ul li a.active {
+      color: #f7b733;
+    }
+
+    /* Hero section */
+    .hero {
+      height: 100vh;
+      background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1470&q=80') center center/cover no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 60px;
+      color: white;
+      text-shadow: 0 0 10px rgba(0,0,0,0.7);
+    }
+    .hero h1 {
+      font-size: 3.5rem;
+      margin-bottom: 10px;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+    .hero h1 strong {
+      color: #f7b733;
+    }
+    .hero p {
+      max-width: 600px;
+      font-size: 1.1rem;
+      margin-bottom: 25px;
+      line-height: 1.5;
+    }
+    .btn-download {
+      display: inline-block;
+      background-color: #f7b733;
+      color: #1c1c1c;
+      font-weight: 700;
+      padding: 12px 25px;
+      border-radius: 4px;
+      text-transform: uppercase;
+      text-decoration: none;
+      letter-spacing: 1px;
+      box-shadow: 0 8px 15px rgba(247, 183, 51, 0.3);
+      transition: all 0.3s ease;
+    }
+    .btn-download:hover {
+      background-color: #f0a500;
+      box-shadow: 0 15px 20px rgba(240, 165, 0, 0.4);
+      transform: translateY(-2px);
+    }
+
+    /* About section */
+    section.about {
+      padding: 70px 40px;
+      text-align: center;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    section.about .section-title {
+      color: #f7b733;
+      font-weight: 700;
+      letter-spacing: 4px;
+      font-size: 0.95rem;
+      margin-bottom: 15px;
+      text-transform: uppercase;
+    }
+    section.about h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+      letter-spacing: 1px;
+    }
+    section.about p {
+      font-size: 1.1rem;
+      color: #555;
+      line-height: 1.65;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      nav {
+        padding: 10px 20px;
+      }
+      nav ul {
+        gap: 15px;
+      }
+      .hero {
+        padding-left: 30px;
+        text-align: center;
+        justify-content: center;
+      }
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+      section.about {
+        padding: 50px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav>
+  <div class="logo">RJ</div>
+  <ul>
+    <li><a href="#home" class="active">HOME</a></li>
+    <li><a href="#about">ABOUT</a></li>
+    <li><a href="#skill">SKILL</a></li>
+    <li><a href="#services">SERVICES</a></li>
+    <li><a href="#portfolio">PORTFOLIO</a></li>
+    <li><a href="#testimonial">TESTIMONIAL</a></li>
+    <li><a href="#blog">BLOG</a></li>
+    <li><a href="#contact">CONTACT</a></li>
+  </ul>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero" id="home">
+  <h1>I Am PrakharBajpai! <br />I AM A <strong>DEVELOPER</strong></h1>
+  <p>
+    Libero habitasse sollicitudin aliquet venenatis iaculis placerat amet
+    ligula, eleifend nonummy enim in volutpat diam.
+  </p>
+  <a href="#" class="btn-download" download="AustinJacksonCV.pdf">Download CV</a>
+</section>
+
+<!-- About Section -->
+<section class="about" id="about">
+  <div class="section-title">about</div>
+  <h2>ABOUT MYSELF</h2>
+  <p>
+    Interdum a etiam sagittis vehicula porta. Massa felis eros quam blandit
+    nulla dolor habitant. Ullamcorper quis ornare et proin pellentesque.
+  </p>
+</section>
+
+<!-- Placeholder Sections -->
+<section id="skill" style="padding: 50px; text-align:center;">
+  <h2>Skill Section</h2>
+  <p>Details about skills here...</p>
+</section>
+<section id="services" style="padding: 50px; text-align:center;">
+  <h2>Services Section</h2>
+  <p>Details about services here...</p>
+</section>
+<section id="portfolio" style="padding: 50px; text-align:center;">
+  <h2>Portfolio Section</h2>
+  <p>Details about portfolio here...</p>
+</section>
+<section id="testimonial" style="padding: 50px; text-align:center;">
+  <h2>Testimonial Section</h2>
+  <p>Client testimonials here...</p>
+</section>
+<section id="blog" style="padding: 50px; text-align:center;">
+  <h2>Blog Section</h2>
+  <p>Blog posts here...</p>
+</section>
+<section id="contact" style="padding: 50px; text-align:center;">
+  <h2>Contact Section</h2>
+  <p>Contact information here...</p>
+</section>
+
+<script>
+  // Smooth scrolling for navigation links
+  document.querySelectorAll('nav ul li a').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+      // Update active link
+      document.querySelectorAll('nav ul li a').forEach(link => link.classList.remove('active'));
+      this.classList.add('active');
+    });
+  });
+</script>
+
+</body>
+</html>
